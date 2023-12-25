@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+main :root{
+    --body-font-family:           'Inter', sans-serif;
+
+    --h5-font-size:               24px;
+    --p-font-size:                20px;
+    --copyright-text-font-size:   16px;
+    --product-link-font-size:     14px;
+    --custom-link-font-size:      12px;
+
+    --font-weight-thin:           100;
+    --font-weight-light:          300;
+    --font-weight-normal:         400;
+    --font-weight-bold:           700;
+    --font-weight-black:          900;
+}
+main html{
+    scroll-behavior: smooth;
+}
+main body{
+    background-color: #fff;
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+
+}
+main ::selection{
+    color: #f1f8ff;
+    background: #1f52a5;
+}
+main .wrapper{
+    max-width: 1080px;
+    margin: 50px auto;
+    padding:  40px;
+    position: relative;
+}
+main .wrapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #f1f8ff;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+main .wrapper .row{
+    display: flex;
+}
+main .wrapper .row-1{
+    justify-content: flex-start;
+}
+main .wrapper .row-2{
+    justify-content: flex-end;
+}
+main .wrapper .row section{
+    background: #f1f8ff;
+    border-radius: 5px;
+    width: calc(50% - 40px);
+    padding: 20px;
+    position: relative;
+}
+main .wrapper .row section::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #f1f8ff;
+    top: 28px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+main .row-1 section::before{
+    right: -7px;
+}
+main .row-2 section::before{
+    left: -7px;
+}
+main .row section .icon,
+main .center-line .scroll-icon{
+    position: absolute;
+    background: #f1f8ff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #1f52a5;
+    font-size: 17px;
+    box-shadow: 0 0 0 4px #f1f8ff, inset 0 2px 0 rgba(0,0,0,0.08), 0 3px 0 4px rgba(0,0,0,0.05);
+}
+.center-line .scroll-icon{
+    bottom: 0px;
+    left: 50%;
+    font-size: 25px;
+    transform: translateX(-50%);
+}
+.row-1 section .icon{
+    top: 15px;
+    right: -60px;
+}
+.row-2 section .icon{
+    top: 15px;
+    left: -60px;
+}
+main .row section .details,
+main .row section .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .row section .details .title{
+    font-size: 22px;
+    font-weight: 600;
+}
+main .row section p{
+    margin: 10px 0 17px 0;
+}
+main .row section .bottom a{
+    text-decoration: none;
+    background: #1f52a5;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    /* font-size: 17px; */
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+main .row section .bottom a:hover{
+    transform: scale(0.97);
+}
+main main @media(max-width: 790px){
+    .wrapper .center-line{
+        left: 40px;
+    }
+    .wrapper .row{
+        margin: 30px 0 3px 60px;
+    }
+    .wrapper .row section{
+        width: 100%;
+    }
+    .row-1 section::before{
+        left: -7px;
+    }
+    .row-1 section .icon{
+        left: -60px;
+    }
+}
+main @media(max-width: 440px){
+    .wrapper .center-line,
+    .row section::before,
+    .row section .icon{
+        display: none;
+    }
+    .wrapper .row{
+        margin: 10px 0;
+    }
+}
+
+
+/*---------------------------------------
+  CUSTOM LINK
+-----------------------------------------*/
+.custom-link {
+    color: var(--p-color);
+
+
+    text-transform: uppercase;
+    position: relative;
+}
+
+.custom-link i {
+    position: absolute;
+    opacity: 0;
+    bottom: 0;
+    left: 100%;
+    transition: all 0.3s;
+    line-height: normal;
+}
+
+.custom-link:hover i {
+    opacity: 1;
+    left: 101%;
+}
+
+
+
+
+
+
+
+/*---------------------------------------
+  NAVIGATION
+-----------------------------------------*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* or any other value that suits your needs */
+    font-weight: bold;
+    background-color: var(--white-color);
+    right: 0;
+    padding: 25px 0;
+    will-change: transform;
+    transition: transform 300ms linear;
+    margin-bottom: 100px;
+
+}
+
+.navbar span, h2 span, h4 span {
+    color: var(--primary-color);
+}
+
+.navbar.headroom--not-top {
+    padding: 20px 0;
+}
+
+.headroom--pinned {
+    transform: translate(0, 0);
+}
+
+.headroom--unpinned {
+    transform: translate(0, -150%);
+}
+
+.navbar-brand {
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: var(--font-weight-light);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    display: inline-block;
+    padding: 0;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.nav-link {
+    color: var(--p-color);
+    font-size: 16px;
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--grey-color);
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.navbar .nav-link.active::after,
+.navbar .nav-link:hover::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--p-color);
+}
+
+.navbar-toggler {
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    margin: 0;
+    width: 30px;
+    height: 35px;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before,
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transition: top 300ms 50ms ease, -webkit-transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease;
+    transition: top 300ms 50ms ease, transform 300ms 350ms ease, -webkit-transform 300ms 350ms ease;
+    top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(-45deg);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background: var(--dark-color);
+    transition: background 10ms 300ms ease;
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: relative;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+    transition: top 300ms 350ms ease, -webkit-transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease;
+    transition: top 300ms 350ms ease, transform 300ms 50ms ease, -webkit-transform 300ms 50ms ease;
+    position: absolute;
+    right: 0;
+    left: 0;
+    background: var(--dark-color);
+    width: 30px;
+    height: 2px;
+    content: '';
+}
+
+.navbar-toggler .navbar-toggler-icon:before {
+    top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon:after {
+    top: 8px;
+}
+
+/*---------------------------------------
+  SITE HEADER
+-----------------------------------------*/
+.site-header {
+    background-color: var(--section-bg-color);
+    position: relative;
+    overflow: hidden;
+    margin-top: 86px;
+}
+
+.site-header.section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.site-header.section-padding-img {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.header-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
