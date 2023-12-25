@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Tooplate's Little Fashion - Products</title>
+
+        <!-- CSS FILES -->
+        <link rel="stylesheet" href="css/timeline.css"/>
+        <link rel="stylesheet" href="css/quiz.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/slick.css"/>
+
+        <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+
+    </head>
+
+    <body onload="NextQuestion(0)">
+
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+
+
+        <main>
+
+            <div class="modal-container" id="score-modal">
+
+                <div class="modal-content-container">
+
+                    <h1>Congratulations, Quiz Completed.</h1>
+
+                    <div class="grade-details">
+                        <p>Attempts : 10</p>
+                        <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                        <p>Right Answers : <span id="right-answers"></span></p>
+                        <p>Grade : <span id="grade-percentage"></span>%</p>
+                        <p ><span id="remarks"></span></p>
+                    </div>
+
+                    <div class="modal-button-container">
+                        <button onclick="closeScoreModal()">Continue</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="game-quiz-container">
+
+                <div class="game-details-container">
+                    <h1>Счет : <span id="player-score"></span> / 10</h1>
+                    <h1> Вопросов : <span id="question-number"></span> / 10</h1>
+                </div>
+
+                <div class="game-question-container">
+                    <h1 id="display-question"></h1>
+                </div>
+
+                <div class="game-options-container">
+
+                    <div class="modal-container" id="option-modal">
+
+                        <div class="modal-content-container">
+                            <h1>Please Pick An Option</h1>
+
+                            <div class="modal-button-container">
+                                <button onclick="closeOptionModal()">Continue</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <span>
+                    <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                    <label for="option-one" class="option" id="option-one-label"></label>
+                </span>
+
+
+                    <span>
+                    <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                    <label for="option-two" class="option" id="option-two-label"></label>
+                </span>
+
+
+                    <span>
+                    <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                    <label for="option-three" class="option" id="option-three-label"></label>
+                </span>
+
+
+                    <span>
+                    <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                    <label for="option-four" class="option" id="option-four-label"></label>
+                </span>
+
+
+                </div>
+
+                <div class="next-button-container">
+                    <button onclick="handleNextQuestion()">Следующий</button>
+                </div>
+
+            </div>
+        </main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>ITMO</span> HISTORY</strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="notiong/sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="notiong/product-detail.html" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Главна</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Лента времени</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="quiz.html">Квиз</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="   ">На разработке</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="  ">На разработке</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="notiong/sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                            <a href="notiong/product-detail.html" class="bi-bag custom-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </main>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/index.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
