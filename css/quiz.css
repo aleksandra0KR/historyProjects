@@ -72,11 +72,12 @@ main{
 }
 
 .game-options-container span{
-    width: 45%;
-    height: 3rem;
+    width: 47%;
+    height: 5rem;
     border: 2px solid darkgray;
     border-radius: 20px;
     overflow: hidden;
+    text-align: center;
 }
 span label{
     width: 100%;
@@ -90,9 +91,9 @@ span label{
 }
 
 span label:hover{
-    -ms-transform: scale(1.12);
-    -webkit-transform: scale(1.12);
-    transform: scale(1.12);
+    -ms-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
     color: #1F52A5;
 }
 
@@ -103,9 +104,9 @@ input[type="radio"] {
 
 
 input[type=radio]:checked ~ .option {
-    -ms-transform: scale(1.12);
-    -webkit-transform: scale(1.12);
-    transform: scale(1.12);
+    -ms-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
     color: #1F52A5;
 }
 
@@ -126,9 +127,9 @@ input[type=radio]:checked ~ .option {
     outline: none;
 }
 .next-button-container button:hover{
-    -ms-transform: scale(1.12);
-    -webkit-transform: scale(1.12);
-    transform: scale(1.12);
+    -ms-transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
     color: #1F52A5;
 }
 

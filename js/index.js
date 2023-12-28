@@ -1,219 +1,92 @@
 const questions = [
     {
-        question: "Начало блокады Ленинграды?",
-        optionA: "6 сентября 1941 г",
-        optionB: "8 сентября 1942 г",
-        optionC: "10 сентября 1941 г",
-        optionD: "8 сентября 1941 г",
-        correctOption: "optionD"
+        question: "Какова была цель приказа от 21 июня 1941 года о подготовке бомбоубежищ?",
+        optionA: "Подготовиться к эвакуации сотрудников и студентов",
+        optionB: "Защититься от возможных воздушных налетов",
+        optionC: "Хранить военную технику и материалы",
+        optionD: "Создать секретную лабораторию по разработке вооружений",
+        correctOption: "optionB"
     },
 
     {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Что произошло в марте 1942 г?",
-        optionA: "Прекращение занятий в институте",
-        optionB: "Эвокуация института",
-        optionC: "Начало блокады",
-        optionD: "Создан рабочий батальон",
+        question: "Когда началась Великая Отечественная война?",
+        optionA: "22 июня 1941 г.",
+        optionB: "1 июля 1941 г.",
+        optionC: "1 августа 1941 г.",
+        optionD: "1 сентября 1941 г.",
         correctOption: "optionA"
     },
 
     {
-        question: "Когда началась реэвакуация института?",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "10 августа 1944 г",
-        optionD: "10 августа 1943 г",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Начало блокады Ленинграды?",
-        optionA: "6 сентября 1941 г",
-        optionB: "8 сентября 1942 г",
-        optionC: "10 сентября 1941 г",
-        optionD: "8 сентября 1941 г",
+        question: "Как называлась военно-ремонтная база, созданная на ЛИТМО во время войны?",
+        optionA: "Военно-ремонтная база № 1",
+        optionB: "Ленинградский инструментальный завод (ЛИТМО)",
+        optionC: "75-я артиллерийская база",
+        optionD: "Оптико-механическая ремонтная мастерская",
         correctOption: "optionD"
     },
 
     {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
+        question: "Кто в годы войны был начальником оптико-механической ремонтной мастерской ЛИТМО?",
+        optionA: "А. Н. Захарьевский",
+        optionB: "Г. В. Погрев",
+        optionC: "В. А. Егоров",
+        optionD: "Л. Гольдберг",
+        correctOption: "optionA"
+    },
+
+    {
+        question: "Каково было назначение механического отделения на военно-ремонтной базе?",
+        optionA: "Для производства оптических приборов",
+        optionB: "Для ремонта артиллерийского вооружения",
+        optionC: "Для изготовления деталей военной техники",
+        optionD: "Для выполнения других видов механических работ",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Когда началась блокада Ленинграда?",
+        optionA: "22 июня 1941 г.",
+        optionB: "8 сентября 1941 г.",
         optionC: "27 декабря 1943 г",
-        optionD: "36",
+        optionD: "1 октября 1941 г.",
+        correctOption: "optionB"
+    },
+
+    {
+        question: "Сколько отделений было в здании ЛИТМО, пострадавшем в результате немецкого обстрела в октябре 1941 года?",
+        optionA: "Одно",
+        optionB: "Два",
+        optionC: "Три",
+        optionD: "Четыре",
         correctOption: "optionC"
     },
 
     {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
+        question: "Когда в ЛИТМО прибыла первая группа студентов после снятия блокады?",
+        optionA: "май 1944 г.",
+        optionB: "июнь 1944 г.",
+        optionC: "июль 1944 г.",
+        optionD: "август 1944 г.",
+        correctOption: "optionA"
     },
 
     {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
+        question: "В каком году началась реконструкция ЛИТМО?",
+        optionA: "1943 г.",
+        optionB: "1944 г.",
+        optionC: "1945 г.",
+        optionD: "1946 г.",
+        correctOption: "optionB"
     },
 
     {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
-    },
-
-    {
-        question: "Когда закончилась блокада Ленинграда",
-        optionA: "29 января 1944 г",
-        optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
-        optionD: "36",
-        correctOption: "optionC"
+        question: "Когда в ЛИТМО приехала вторая группа студентов?",
+        optionA: "январь 1945 г.",
+        optionB: "февраль 1945 г.",
+        optionC: "март 1945 г.",
+        optionD: "апрель 1945 г.",
+        correctOption: "optionD"
     },
 
     {
@@ -224,7 +97,6 @@ const questions = [
         optionD: "36",
         correctOption: "optionC"
     }
-
 ]
 
 
@@ -346,15 +218,15 @@ function handleEndGame() {
 
     // condition check for player remark and remark color
     if (playerScore <= 3) {
-        remark = "Bad Grades, Keep Practicing."
+        remark = "Можно еще раз прочитать информацию)"
         remarkColor = "red"
     }
     else if (playerScore >= 4 && playerScore < 7) {
-        remark = "Average Grades, You can do better."
+        remark = "Ого, хорошая память!"
         remarkColor = "orange"
     }
     else if (playerScore >= 7) {
-        remark = "Excellent, Keep the good work going."
+        remark = "Вау! Схватываешь все на лету"
         remarkColor = "green"
     }
     const playerGrade = (playerScore / 10) * 100
