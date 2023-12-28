@@ -94,7 +94,7 @@ const questions = [
         optionA: "29 января 1944 г",
         optionB: "24 января 1944 г",
         optionC: "27 декабря 1943 г",
-        optionD: "36",
+        optionD: "20 декабря 1943 г",
         correctOption: "optionC"
     }
 ]
