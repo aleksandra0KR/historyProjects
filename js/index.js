@@ -93,7 +93,7 @@ const questions = [
         question: "Когда закончилась блокада Ленинграда",
         optionA: "29 января 1944 г",
         optionB: "24 января 1944 г",
-        optionC: "27 декабря 1943 г",
+        optionC: "27 января 1944 г",
         optionD: "20 декабря 1943 г",
         correctOption: "optionC"
     }
